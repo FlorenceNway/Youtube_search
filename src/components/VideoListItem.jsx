@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/VideoDetail.scss";
 
 const VideoListItem = (props) => {
   const { video, onVideoSelect, selectedVideo } = props;
@@ -8,7 +9,7 @@ const VideoListItem = (props) => {
 
   return (
     <li
-      className={`list-group-item ${isSelected ? "selected" : ""}`}
+      className={`list-item ${isSelected ? "selected" : ""}`}
       key={video.etag}
       onClick={() => onVideoSelect(video)}
     >
