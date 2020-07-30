@@ -12,9 +12,8 @@ const VideoDetail = (props) => {
 
   return (
     <div className="video-detail">
-      <div className="embed-responsive embed-responsive-16by9">
+      <div className="iframe-wrapper">
         <iframe
-          className="embed-responsive-item"
           title="video-detail"
           src={url}
         ></iframe>
