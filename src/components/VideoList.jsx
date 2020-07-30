@@ -1,5 +1,5 @@
 import React from "react";
-import VideoListItem from "./video_list_item";
+import VideoListItem from "./VideoListItem";
 
 const VideoList = (props) => {
   const { videos, onVideoSelect, selectedVideo } = props;
@@ -16,7 +16,7 @@ const VideoList = (props) => {
   });
   console.log(videos);
 
-  return <ul className="col-md-4 list-group">{videoItem}</ul>;
+  return <ul className="videoList">{videoItem}</ul>;
 };
 
 export default VideoList;
