@@ -8,7 +8,7 @@ const SearchBar = () => {
     }
 
     return (
-        <div>
+        <div className="searchBar">
             <input onChange={searchHandler} value={searchInput} placeholder={'Search...'}/>
         </div>
     )
