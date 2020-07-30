@@ -1,10 +1,11 @@
 import React,{useState} from 'react'
 
-const SearchBar = () => {
+const SearchBar = ({onSearch}) => {
     const [searchInput, setSearchInput] = useState("")
 
     const searchHandler = (e) => {
         setSearchInput(e.target.value)
+        onSearch(searchInput)
     }
 
     return (
