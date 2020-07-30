@@ -1,10 +1,9 @@
 import React from "react";
-import YouTubeSearch from "youtube-api-search";
+import YoutubeSearch from "youtube-api-search";
 import Header from "./components/Header";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
 import _ from "lodash";
-
 
 
 const API_KEY = "AIzaSyDQkgxZUa4gM8sMpM6vkMkAPx3-wDIhHEw";
@@ -22,7 +21,7 @@ class App extends React.Component {
   }
 
   onSearchVideo = (value) => {
-    YouTubeSearch({ key: API_KEY, term: value }, (data) => {
+    YoutubeSearch({ key: API_KEY, term: value }, (data) => {
       this.setState({
         videos: data,
         selectedVideo: data[0],
