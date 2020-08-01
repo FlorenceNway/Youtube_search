@@ -10,6 +10,9 @@ import '../style/Header.scss'
          className="youtubeLogo"
        />
        <SearchBar onSearch={onSearch} />
+       <div className="avatar">
+        FN
+       </div>
      </div>
    );
  };
