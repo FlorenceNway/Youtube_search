@@ -19,6 +19,12 @@
     .avatar {
         width: 50px;
         border-radius: 50%;
+        background: #d46b6b;
+        margin-right: 30px;
+
+        .avatarText{
+            margin-left: 14px;
+        }
     }
 }
 
