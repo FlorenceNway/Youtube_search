@@ -11,7 +11,7 @@ import '../style/Header.scss'
        />
        <SearchBar onSearch={onSearch} />
        <div className="avatar">
-        FN
+        <p className='avatarText'>FN</p>
        </div>
      </div>
    );
