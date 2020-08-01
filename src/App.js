@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
 import _ from "lodash";
+import LikeComment from "./components/LikeComment";
 
 
 const API_KEY = "AIzaSyDQkgxZUa4gM8sMpM6vkMkAPx3-wDIhHEw";
@@ -45,6 +46,7 @@ class App extends React.Component {
             selectedVideo={this.state.selectedVideo}
           />
         </div>
+        <LikeComment/>
       </div>
     );
   }
